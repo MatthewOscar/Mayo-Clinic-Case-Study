@@ -1,0 +1,39 @@
+.ReadTasks {
+    padding: 1rem;
+}
+
+.task-gallery {
+    display: flex;
+    justify-content: flex-start; /* Align tasks to the left */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 1rem; /* Add spacing between task cards */
+    padding: 1rem; /* Add padding inside the gallery */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    padding-left: 1rem; /* Ensure the leftmost task is fully visible */
+    padding-right: 1rem; /* Ensure the rightmost task is fully visible */
+}
+
+.task-gallery::-webkit-scrollbar {
+    height: 8px; /* Horizontal scrollbar height */
+}
+
+.task-gallery::-webkit-scrollbar-thumb {
+    background-color: #0000ff; /* Scrollbar thumb color */
+    border-radius: 4px;
+}
+
+.task-card {
+    flex: 0 0 300px; /* Each card takes up 300px width */
+    border: 3px solid black; /* Black outline for each task card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #fff;
+    padding: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.task-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    background-color: rgba(0, 0, 0, 0.05); /* Slightly darker background on hover */
+    cursor: pointer; /* Pointer cursor to indicate interactivity */
+}

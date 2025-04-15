@@ -1,0 +1,25 @@
+.Task {
+    border-radius: 8px; /* Rounded corners */
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.edit-task-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff !important;
+    background-color: #007bff; /* Blue color for the button */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-task-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
